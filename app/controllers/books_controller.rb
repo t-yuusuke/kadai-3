@@ -27,6 +27,7 @@ end
 def show
     @booka = Book.new
     @book = Book.find(params[:id])
+    @book_comment = BookComment.new
     @user = User.find(current_user[:id])
     @user = @book.user
 
